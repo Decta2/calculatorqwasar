@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+
+*{
+  
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 18px;
+}
+
+
+
+
+
+body{
+    background: #dde3ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-content{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    border: 10px solid #524c4e;
+    background: #878384;
+    border-radius: 5px;
+}
+
+.keypad-app{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(90px,auto)
+}
+input[type="text"]{
+    height: 90px;
+    width: 391px;
+    background-color: #878384;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#clear{
+    grid-column: 1/3;
+    grid-row: 1;
+    color: #262834;
+}
+#result{
+    grid-row: 3/3;
+    grid-row: 5;
+    color: #262834;
+}
+
+#backspace{
+    color:#262834;
+}
+
+button{
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #262834;
+    color: #ffff;
+    font-weight: 900;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active
+{
+ outline: none;
+}
+
+#clear{
+    background: #50ba9c;
+}
+
+#backspace{
+    background: #50ba9c;
+}
+
+#clear-app{
+    background: #50ba9c;
+}
+#plus{
+    background: #50ba9c;
+}
+#minus{
+    background: #50ba9c;
+
+}
+#plus-two{
+    background: #50ba9c;
+}
+#result{ 
+    background: #50ba9c;  
+}
+#zero{
+    background: #50ba9c;
+}
+#tojka{
+    background: #50ba9c;
+    
+}
